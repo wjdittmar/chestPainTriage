@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package chestpain;
+
+message SymptomInput {
+  int32 age = 1;
+  string gender = 2;
+  string medical_history = 3;
+  string surgical_history = 4;
+  string current_medications = 5;
+  bool smoker = 6;
+  string symptom_description = 7;
+  string onset = 8;
+  string aggravating_factors = 9;
+  string relieving_factors = 10;
+  string associated_symptoms = 11;
+}
+
+message TriageResponse {
+  string recommendation = 1;
+  repeated string possible_causes = 2;
+  repeated string additional_questions = 3;
+  repeated string education_links = 4;
+}
+
+service TriageService {
+  rpc AnalyzeSymptoms(SymptomInput) returns (TriageResponse);
+}
