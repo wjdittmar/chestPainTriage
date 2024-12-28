@@ -47,7 +47,7 @@ The **Chest Pain Triage App** is a web-based application designed to help patien
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/chest-pain-triage-app.git
+git clone https://github.com/yourusername/chestPainTriage.git
 cd chest-pain-triage-app
 ```
 
@@ -129,7 +129,7 @@ scp -r /path/to/project ec2-user@<ec2-ip>:/home/ec2-user
 ### 4. Run the Application
 
 ```bash
-cd /home/ec2-user/chest-pain-triage-app
+cd /home/ec2-user/chestPainTriage
 docker-compose up --build -d
 ```
 
