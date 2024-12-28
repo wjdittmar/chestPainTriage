@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package chestpain;
 
+option go_package = "chest-pain-backend/proto";
+
 message SymptomInput {
   int32 age = 1;
   string gender = 2;

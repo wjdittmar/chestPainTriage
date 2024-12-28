@@ -1,4 +1,5 @@
 # syntax=docker.io/docker/dockerfile:1
+# based on https://github.com/vercel/next.js/blob/canary/examples/with-docker/Dockerfile
 
 FROM node:18-alpine AS base
 
